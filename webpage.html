@@ -57,7 +57,7 @@
 <body class="antialiased overflow-x-hidden">
   <div id="app" x-data="{ signup: false, phishing: false, interests: 'episode_content', resourcesMenuOpen: false, mobileMenuOpen: false }">
     <div class="relative">
-      <div class="relative" style="background:linear-gradient(150deg,#cc8199 15%,#d14572 70%,#d14572 94%)">
+      <div class="relative" style="background:linear-gradient(150deg,#cc8199 15%,#d14572 70%,#a8395d 94%)">
         <div class="container mx-auto relative opacity-25 z-0">
           <div class="relative opacity-50">
             <div class="w-full h-56 rounded-l-lg left-0 -ml-48 sm:-ml-56 -mt-20 opacity-25  transform -rotate-45 bg-red-200 absolute -mt-48"></div>
@@ -82,12 +82,12 @@
                       </svg>
                     </button>
                   </div>
-                  <nav class="hidden md:flex space-x-8 lg:space-x-12 h-full items-center">
-                    <a href="/partners" class="text-s lg:text-base leading-6 pr-1 opacity-75 hover:opacity-100 font-bold text-gray-200 hover:text-gray-100 focus:text-gray-100 focus:outline-none transition ease-in-out duration-150">
+                  <nav class="hidden md:flex space-x-4 md:space-x-8 lg:space-x-6 xl:space-x-8 h-full items-center">
+                    <a href="/partners" class="text-base lg:text-2xl leading-6 pr-1 opacity-75 hover:opacity-100 font-bold text-gray-200 hover:text-gray-100 focus:text-gray-100 focus:outline-none transition ease-in-out duration-150">
                       News
                     </a>
                     <div @mouseenter="flyoutMenuOpen2 = true" @mouseleave="flyoutMenuOpen2 = false" x-data="{ flyoutMenuOpen2: false }" class="relative text-gray-100">
-                      <button type="button" @click="flyoutMenuOpen2 = !flyoutMenuOpen2" x-state:on="Item active" x-state:off="Item inactive" class="group inline-flex items-center space-x-2 text-s lg:text-base leading-6 font-bold opacity-75 focus:text-gray-100 text-gray-100 focus:outline-none hover:opacity-100 focus:outline-none transition ease-in-out duration-150 h-28">
+                      <button type="button" @click="flyoutMenuOpen2 = !flyoutMenuOpen2" x-state:on="Item active" x-state:off="Item inactive" class="group inline-flex items-center space-x-2 text-base lg:text-2xl leading-6 font-bold opacity-75 focus:text-gray-100 text-gray-100 focus:outline-none hover:opacity-100 focus:outline-none transition ease-in-out duration-150 h-28">
                         <span>Resources</span>
                       </button>
                       <div x-description="Flyout menu, show/hide based on flyout menu state." x-show="flyoutMenuOpen2" x-transition:enter="transition ease duration-200" x-transition:enter-start="opacity-0 translate-y-1 scale-95" x-transition:enter-end="opacity-100 translate-y-0 scale-100"
@@ -190,7 +190,7 @@
                       </div>
                     </div>
                     <div @mouseenter="aboutMenuOpen = true" @mouseleave="aboutMenuOpen = false" x-data="{ aboutMenuOpen: false }" class="relative text-gray-100">
-                      <button type="button" @click="aboutMenuOpen = !aboutMenuOpen" x-state:on="Item active" x-state:off="Item inactive" class="group inline-flex items-center space-x-2 text-s lg:text-base leading-6 font-bold opacity-75 focus:text-gray-100 text-gray-100 focus:outline-none hover:opacity-100 focus:outline-none transition ease-in-out duration-150 text-gray-100 h-28">
+                      <button type="button" @click="aboutMenuOpen = !aboutMenuOpen" x-state:on="Item active" x-state:off="Item inactive" class="group inline-flex items-center space-x-2 text-base lg:text-2xl leading-6 font-bold opacity-75 focus:text-gray-100 text-gray-100 focus:outline-none hover:opacity-100 focus:outline-none transition ease-in-out duration-150 text-gray-100 h-28">
                         <span>About</span>
                       </button>
                       <div x-description="Flyout menu, show/hide based on flyout menu state." x-show="aboutMenuOpen" x-transition:enter="transition ease duration-200" x-transition:enter-start="opacity-0 translate-y-1 scale-95" x-transition:enter-end="opacity-100 translate-y-0 scale-100"
@@ -246,9 +246,6 @@
                     </div>
                   </nav>
                   <div class="hidden md:flex items-center justify-end space-x-8 lg:flex-1 lg:w-0">
-                    <a href=# target="_blank" class="whitespace-no-wrap text-xs sm:text-base leading-7 font-bold text-gray-200 hover:text-gray-100 focus:text-gray-100 focus:outline-none">
-                      Sign in
-                    </a>
                     <a href="/store" class="whitespace-no-wrap text-xs sm:text-base leading-7 font-bold text-gray-200 hover:text-gray-100 focus:text-gray-100 focus:outline-none">
                       Store
                     </a>
